@@ -26,9 +26,9 @@ function calcularMedia() {
     console.log(media)
 
     if (media < mediaApr) {
-        resultado.innerHTML = `A média dos valores é: <span class="vermelho">${media} Reprov </span>`
+        resultado.innerHTML = `A média dos valores é: <span class="vermelho">${media} Reprovado </span>`
     } else {
-        resultado.innerHTML = `A média dos valores é: <span class="verde">${media} Aprov </span>`
+        resultado.innerHTML = `A média dos valores é: <span class="verde">${media} Aprovado </span>`
     }
 
 }
