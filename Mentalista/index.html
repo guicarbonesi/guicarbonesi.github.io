@@ -1,0 +1,48 @@
+<body>
+   <div class="container">
+      <h1 class="page-title">
+      Mentalista
+      </h1>
+      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo" alt=""><br>
+      <p class="page-subtitle">
+      Adivinhe um número em um intervalo definido por você mesmo!
+      </p>
+      <form class="formularioRegras">
+         <fieldset>
+            <legend>Regras do jogo</legend> 
+            <p>Quantas chances você quer? <input type="number" size="2" id="qtdChances" min="0"></p>
+            <p>Escolha um número inicial e um final</p>
+            <p id="mensagemErro" class="escondido"></p>
+            <label for="numInicial">Número inicial</label>
+            <input type="number" size="2" id="numInicial">
+            <label for="numFinal">Número final</label>
+            <input type="number" size="2" id="numFinal">
+            <button id="botaoRegras">Defina as regras</button>
+         </fieldset>
+      </form>
+      
+      <form class="formularioChute escondido">
+         <fieldset>
+            <legend>Tente acertar</legend>
+            <p id="mensagemErroDois" class="escondido"></p>
+            <label for="chute">Digite aqui seu chute</label>
+            <input type="number" id="chute" size="2">
+            <button id="botaoChute">Chutar</button>
+            <p id="mensagemResultado" class="escondido"></p>
+            <button id="botaoReiniciar">Reiniciar</button>
+         </fieldset>
+      </form>
+      
+   </div>
+
+   <footer>
+      <p>Caio Cabral</p>
+      <p>Front-End Developer</p>
+      <a href="https://www.linkedin.com/in/caio-marcellus-cabral/" target="_blank"><p>Linkedin</p></a>
+   </footer>
+   
+   <a href="https://alura.com.br/" target="_blank">
+      <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+   </a>
+
+</body>
