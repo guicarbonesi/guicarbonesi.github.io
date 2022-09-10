@@ -1,23 +1,38 @@
-// ========================================= MOEDA ===========================================//
+function getElement(id) {
+  return document.getElementById(id);
+}
 
-function converterMoeda() {
-    let moedaInicial = document.getElementById("valor1Moeda").value;
-    let url = `https://v6.exchangerate-api.com/v6/e21611f760275389ee84d845/latest/${moedaInicial}`;
-    let dados = Array();
-    let resultadoMoeda = document.getElementById("resultadoMoeda")
+function mudaConv() {
+  let e = getElement("slct_pagina").value;
 
-    fetch(url).then((res) => {
-      res.json().then((data) => {
-        dados = data.conversion_rates;
-  
-        let valor = parseFloat(document.getElementById("valorMoeda").value);
-        let moedaFinal = document.getElementById("valor2Moeda").value;
-  
-        valorConvertido = valor * dados[moedaFinal];
-        valorFinal = parseFloat(valorConvertido).toFixed(2);
+  switch (e) {
+    case "moeda":
+      getElement("slct_moeda").hidden = false;
+      getElement("slct_dist").hidden = true;
+      getElement("slct_bitcoin").hidden = true;
+      getElement("slct_temp").hidden = true;
+      break;
 
-        resultadoMoeda.innerHTML = `A conversão de ${moedaInicial} para ${moedaFinal} é ${valorFinal}`;
-      });
-    });
+    case "bitcoin":
+      getElement("slct_moeda").hidden = true;
+      getElement("slct_dist").hidden = true;
+      getElement("slct_bitcoin").hidden = false;
+      getElement("slct_temp").hidden = true;
+      break;
   }
+}
 
+async function ConverterMoeda() {
+  let c1 = getElement("select_currency1").value;
+  let c2 = getElement("select_currency2").value;
+  let valorC1 = getElement("valor").value;
+  valorC1 = isNaN(valorC1) ? 0 : valorC1;
+
+  // Usa uma API para pegar o peso das moedas com relação à primeira moeda colocada
+  let result = await (
+    await fetch(`https://api.exchangerate-api.com/v4/latest/${c1}`)
+  ).json();
+
+  let valorC2 = result.rates[c2] * valorC1;
+  getElement("valorConvertido").innerHTML = `${c2} ` + valorC2.toFixed(2);
+}
