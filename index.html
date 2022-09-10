@@ -1,56 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>Imersão Dev Aluna 5ºEdição 💻</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-            color: aliceblue;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-            background-color: black;
-
-            height: 100vh;
-        }
-
-        p {
-            margin-bottom: 50px;
-        }
-
-        .links a {
-            background-color: gold;
-            color: black;
-            font-family: sans-serif;
-            font-size: 15px;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-    </style>
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>🚧 Imersão Dev Aluna 5ºEdição 🚧</p>
-
-    <p>🚧 Em Construção 🚧</p>
-    <div class="links">
-        <a href="Calculadora/">Imersão Dev Aluna 5ºEdição</a>
-        <a href="/Calculadora/media/">Calculadora de média</a>
-        <a href="Conversor/">Conversor</a>
-        <a href="temperatura/">Conversor de temperatura</a>
-
+    <div class="container">
+        <header>
+            <h1>Imersão Dev Aluna 5ºEdição</h1>
+            <nav>
+                <a href=""><li class="active">Atualizar</li></a>
+            </nav>
+        </header>
+        <main>
+            <div class="formContainer">
+                <a href="media/"><button>Calculadora de Média</button></a>
+                <a href="/temperatura/"><button>Conversor de temperatura</button></a>
+                <a href="Conversor/"><button>Conversor de temperatura</button></a>
+            </div>
+        </main>
+        <footer>
+            <span> by <a class="link" target="_blank" href="https://linktr.ee/guicarbonesi">guicarbonesi</a></span>
+        </footer>
     </div>
 </body>
 </html>
