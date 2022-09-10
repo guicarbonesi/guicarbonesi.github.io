@@ -8,16 +8,12 @@ function mudaConv() {
   switch (e) {
     case "moeda":
       getElement("slct_moeda").hidden = false;
-      getElement("slct_dist").hidden = true;
       getElement("slct_bitcoin").hidden = true;
-      getElement("slct_temp").hidden = true;
       break;
 
     case "bitcoin":
       getElement("slct_moeda").hidden = true;
-      getElement("slct_dist").hidden = true;
       getElement("slct_bitcoin").hidden = false;
-      getElement("slct_temp").hidden = true;
       break;
   }
 }
