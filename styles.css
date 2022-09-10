@@ -24,6 +24,29 @@ body {
     margin: 0 auto;
 }
 
+</body>
+.btn-yellow {
+    color: #292a23;
+    background-color: #fff;
+    border: 2px solid #292a23;
+    border-radius: 5px;
+    box-shadow: 3px 3px  black;
+
+    width: 100px;
+    height: 30px;
+    transition: ease-in-out 100ms;
+}
+
+.btn-yellow:hover {
+    color: #fff;
+    background-color: #292a23;
+    border: 2px solid #292a23;
+    border-radius: 5px;
+    box-shadow: none;
+
+    cursor: pointer;
+}
+
 /* ========================== HEADER ======================================= */
 
 header {
