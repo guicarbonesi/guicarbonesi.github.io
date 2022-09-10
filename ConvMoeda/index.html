@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+
+    <link rel="stylesheet" href="/media/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Imersão Dev Aluna 5ºEdição</h1>
+            <nav>
+                <a href="../index.html"><li>Return</li></a>
+                <a href=""><li class="active">Atualizar</li></a>
+            </nav>
+        </header>
+        <main>
+
+            <h2>Conversor de Moeda</h2>
+            <p id="resultadoMoeda">...</p>
+            <input  id="valorMoeda" required placeholder="digite o valor" type="text" min="0" />
+                        <select id="valor1Moeda" type="text">
+                            <option value="BRL">Real</option>
+                            <option value="USD">Dólar americano</option>
+                            <option value="EUR">Euro</option>
+                            <option value="KRW">Won sul-coreano</option>
+                            <option value="JPY">Iene japonês</option>
+                        </select>
+                        
+                        <span>para</span>
+                        
+                        <select id="valor2Moeda" type="text">
+                            <option  value="USD">Dólar americano</option>
+                            <option value="BRL">Real</option>
+                            <option value="EUR">Euro</option>
+                            <option value="KRW">Won sul-coreano</option>
+                            <option value="JPY">Iene japonês</option>
+                        </select>
+                        
+                        <button type="submit" class="btn" >Converter</button>
+        </main>
+        <footer>         
+            <span> by <a class="link" target="_blank" href="https://linktr.ee/guicarbonesi">guicarbonesi</a></span>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
