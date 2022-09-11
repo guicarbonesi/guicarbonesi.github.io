@@ -49,7 +49,7 @@ function sorteiaNumero(){
    let numInicialInteiro = parseInt(numInicial.value);
    let numFinalInteiro = parseInt(numFinal.value);
    numeroSorteado = Math.floor((Math.random()*(numFinalInteiro+1-numInicialInteiro))+numInicialInteiro);   
-   console.log(numeroSorteado);
+   console.log("O número secreto é " + numeroSorteado);
 }
 
 function desabilitaCampos(){
