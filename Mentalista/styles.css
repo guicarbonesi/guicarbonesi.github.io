@@ -13,8 +13,6 @@ body {
     color: #fff;
 }
 
-
-
 .container {
     display:  flex;
     justify-content: space-between;
@@ -148,40 +146,6 @@ main .formContainer {
     width: 200px;
     height: 30px;
     padding-left: 5px;
-}
-
-input:disabled,
-button:disabled{
-   background-color: rgba(256,256,256,0.7);
-   cursor:not-allowed;
-}
-
-#mensagemErro,
-#mensagemErroDois{
-  margin-bottom: 10px;
-}
-
-.escondido{
-   display: none;
-}
-
-teste1{
-   color: #fff;
-   font-size: 1.2rem;
-   font-weight: bold;
-   text-align: center;
-}
-
-teste2{
-   text-decoration: none;
-   transition: 1s;
-}
-
-teste1:hover,
-teste1:hover{
-   cursor: pointer;
-   color: #DDDD00;
-   font-size: 1.3rem;
 }
 
 /* Chrome, Safari, Edge, Opera */
