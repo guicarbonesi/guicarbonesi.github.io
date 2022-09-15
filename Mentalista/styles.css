@@ -224,3 +224,11 @@ footer {
     color: gold;
     font-weight: bold;
 }
+
+.formularioRegras {
+  content: '';
+  display: inline-block;
+  height: 600%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
