@@ -25,6 +25,12 @@ header nav {
      height: 600%;
 }
 
+title {
+    display: flex;
+    justify-content: center;
+     height: 600%;
+}
+
 header nav li {
     color: gold;
     font-size: 14px;
