@@ -1,0 +1,162 @@
+* {
+  text-align: center;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 400px;
+  background-image: url("https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/lcu-article-backdrop.jpg");
+  background-color: #111;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.container2 {
+  text-align: center;
+  padding: 80px;
+  border: 1px solid #fff;
+  margin: 50px;
+  background: #00000061;
+}
+
+.espacador {
+  padding: 20px 0px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 300px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+table {
+  border: 2px solid yellow;
+  border-collapse: collapse;
+}
+
+h1 {
+  color: white;
+}
+
+th,
+tr,
+td {
+  border: solid 1px yellow;
+  font-family: "Times New Roman", Times, serif;
+  font-family: Adamina, serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(229, 222, 31);
+  background-color: rgb(58, 16, 71);
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+}
+
+.personagens {
+  width: 110px;
+  height: 110px;
+  border: 1px solid;
+  border-color: #ffff00 #ffd700 #ffff00 #ffd700;
+}
+
+.EspacoLuta {
+  padding: 5px;
+  font-size: 16px;
+  border-width: 4px;
+  border-color: #f9e20f;
+  background-color: #031326;
+  color: white;
+  border-style: double;
+  border-radius: 50px;
+}
+.EspacoLuta:focus {
+  outline: none;
+}
+
+.Desafiar {
+  background: linear-gradient(to bottom, #6f0e96 5%, #3f0270 100%);
+  background-color: #031326;
+  border-radius: 30px;
+  border: 2px solid #ffd505;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff203;
+  font-family: Courier New;
+  font-size: 15px;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-shadow: -1px 0px 0px #e6b217;
+}
+.Desafiar:hover {
+  background: linear-gradient(to bottom, #3f0270 5%, #6f0e96 100%);
+  background-color: #3f0270;
+}
+.Desafiar:active {
+  position: relative;
+  top: 1px;
+}
+
+.Acoes {
+  box-shadow: inset 0px 1px 0px 0px #fff200;
+  background: linear-gradient(to bottom, #c412e0 5%, #dedede 100%);
+  background-color: #c412e0;
+  border-radius: 6px;
+  border: 1px solid #000000;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff200;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #000000;
+}
+.Acoes:hover {
+  background: linear-gradient(to bottom, #dedede 5%, #c412e0 100%);
+  background-color: #dedede;
+}
+.Acoes:active {
+  position: relative;
+  top: 1px;
+}
+
+.fontes {
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.2px;
+  word-spacing: 0.6px;
+  color: #ffcbdb;
+  font-weight: 400;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: capitalize;
+}
+
+.bordinha {
+  color: #fff824;
+}
