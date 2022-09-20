@@ -1,0 +1,48 @@
+70 lines (62 sloc)  18.7 KB
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDZ Ranking</title>
+
+    <link rel="stylesheet" href="/CDZTrunfo/styles.css">
+<body>
+  <div class="container">
+    <img src="https://pizzafria.ig.com.br/wp-content/uploads/2020/04/Os-Cavaleiros-do-Zod%c3%adaco-Saint-Seiya-Online-1024x518.png" class="page-logo" alt="">
+    <div>
+    </div>
+    <a href="../index.html" class="active"><button>Return</button></a>
+    </a>
+    <a href="" class="active"><button>Reiniciar</button></a>
+    </a>
+    <div>
+    </div>
+    <button class="button-sortear" onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+    <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
+    <button class="button-reiniciar" type="button" id="btnRodada" onclick="proxRodada()" disabled="true">Próxima Rodada</button>
+    <div id="btnReiniciar"></div>
+    <div class="placar" id="placar"></div>
+    <form id="form">
+      <h2>Escolha o seu atributo</h2>
+      <div class="wrapper">
+        <div>
+          <div id="carta-jogador">
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;">
+            <h3></h3>
+          </div>
+        </div>
+        <div>
+          <div id="carta-maquina" class="carta"><img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png" style=" width: inherit; height: inherit; position: absolute;"></div>
+        </div>
+      </div>
+      <div type="text" id="naoEscolheu" class="naoEscolheu"></div>
+      <div type="text" id="resultado" class="resultado"></div>
+    </form>
+  </div>
+</body>
+    <script src="/CDZTrunfo/script.js"></script>
+
+</html>
