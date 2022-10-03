@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2020/10/05/11/16/space-5629007_1280.jpg");
+  font-family: "Montserrat", sans-serif;
+  background-size: cover;
+  
+}
+
+section{
+    min-width: 500px;
+    max-width: 930px;
+    background-color:#F0F9FF;
+    border-radius: 25px;
+    margin: 60px auto;
+
+    padding: 25px 25px 65px 25px;
+
+    box-shadow: -4px 5px 0 #7a8389;
+}
+
+header{
+    width: 100%;
+    padding-bottom: 0;
+}
+
+header img{
+    width: 100%;
+    height: 300px;
+    border-radius: 35px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    transform: translateY(10px);
+}
+#perfil{
+    height: 19em;
+    width: 19em;
+    border-radius: 50%;
+    position: absolute;
+    top: -260px;
+    border: 5px solid #F0F9FF
+}
+
+.info h1{
+    margin-top: 60px;
+    font-size: 2em;
+}
+
+.social{
+    width: 50%;
+    height: 50px;
+    background: #7209da;
+    margin: 35px 0 90px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: -2px 2px 5px rgba(0,0,0,.5);
+    font-size: 2em;
+}
+
+.social a:hover{
+    transition: .4s;
+    fill: #FFF;
+}
+
+h2{
+    border-left: #7209da solid 5px;
+    font-size: 1.5em;
+    margin-left: 40px;
+    padding-left: 5px;
+    font-weight: 800;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
+@keyframes blink-caret-dark {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+.info h3 {
+  font-weight: 400;
+  font-size: 24px;
+  
+  /*animação de escrita*/
+   overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto 30px auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+#projetos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    margin: 25px 0;
+    justify-items: center;
+    margin-bottom: 100px;
+}
+
+.container-proj{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+    cursor: pointer;
+
+    box-shadow: -2px 2px 5px rgba(0,0,0,.5);
+}
+
+
+#proj1{
+    background-image: url(img/Rectangle\ 4.png);
+}
+#proj2{
+    background-image: url(img/Rectangle\ 4.png);
+}
+#proj3{
+    background-image: url(img/Rectangle\ 4.png);
+}
+#proj4{
+    background-image: url(img/Rectangle\ 4.png);
+}
+#proj5{
+    background-image: url(img/Rectangle\ 4.png);
+}
+#proj6{
+    background-image: url(img/Rectangle\ 4.png);
+}
+
+.background{
+    background: rgba(0,0,0,.8);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.5em;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#proj1:hover .background{
+    animation: scale 1s linear;   
+    opacity: 0;
+}
+#proj2:hover .background{
+    animation: scale 1s linear;   
+    opacity: 0;
+}
+#proj3:hover .background{
+    animation: scale 1s linear;   
+    opacity: 0;
+}
+#proj4:hover .background{
+    animation: scale 1s linear;   
+    opacity: 0;
+}
+#proj5:hover .background{
+    animation: scale 1s linear;   
+    opacity: 0;
+}
+#proj6:hover .background{
+    animation: scale 1s linear;   
+    opacity: 0;
+}
+
+@keyframes scale {
+    to{
+        transform: scale(1.1,1.1);
+    }
+}
+
+
+.container-proj img{ border-radius: 15px;}
+
+.conquistas{
+    width: 100%;
+    height: 160px;
+    background-color: #7209da;
+    margin-top: 25px;
+    border-radius: 25px;
+    overflow-x: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 25px;
+    align-items: center;
+}
+.container-conq{
+    background: rgba(0,0,0,.5);
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.container-conq img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+.dark {
+  background-image: url("https://images2.alphacoders.com/521/521477.jpg");
+  background-size: auto;
+}
+
+.dark section{
+    background: #212121;
+    color:#FFF;
+    box-shadow: -4px 5px 0 #0f0f10;
+}
+
+.dark #perfil{
+    border-color: #212121
+}
+
+.dark .social, .dark .conquistas{
+    background: #2a005a;
+    color: #FFF;
+}
+
+.dark .social a{
+    fill: #FFF;
+}
+
+.dark h2{
+    border-color: #2a005a;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 25px;
+    top: 20px;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    background: #7209da;
+    transition: .4s;
+    border-radius: 34px;
+    height: 100%;
+}
+
+.switch input{display: none;}
+
+.slider::before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 5px;
+    bottom: 2px;
+    background-color: #FFF;
+    transition: .4s;
+    border-radius: 50px;
+}
+
+input:checked + .slider{
+    background-color: #303030;
+}
+
+input:checked + .slider::before{
+    transform: translateX(25px);
+    background: #7209da;
+}
